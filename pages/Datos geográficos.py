@@ -15,10 +15,10 @@ from decimal import Decimal
 
 ut.add_logo()
 # Carga de datos necesarios
-listings_long = pd.read_csv("./assets/Listings/listings_detail.csv")
+listings_long = pd.read_csv("assets/Listings/listings_detail.csv")
 listings_long["price"] = listings_long["price"].apply(lambda x: Decimal(sub(r'[^\d.]', '', x)))
 listings_long["price"] = pd.to_numeric(listings_long["price"])
-with open("./assets/Geo/neighbourhoods.geojson") as f:
+with open("assets/Geo/neighbourhoods.geojson") as f:
     madrid_gj = geojson.load(f)
 
 
