@@ -11,7 +11,7 @@ st.title("Propuesta de simulación del precio de un Airbnb")
 st.write("Si usted quiere calcular el precio diario óptimo de su vivienda antes de publicar el anuncio en Airbnb, responda al siguiente cuestionario!")
 
 
-listings_long = pd.read_csv("./assets/Listings/listings_detail.csv")
+listings_long = pd.read_csv("assets/Listings/listings_detail.csv")
 
 option = st.selectbox("¿Qué tipo vivienda es?",
     set(listings_long["property_type"].tolist())
