@@ -3,10 +3,10 @@ import utils as ut
 import pandas as pd
 from PIL import Image
 
-Languages_chart = Image.open('./assets/Languages.png')
-Reviews_spanish = Image.open('./assets/Reviews_spanish.png')
-English_positive = Image.open('./assets/English_positive.png')
-English_negative = Image.open('./assets/English_negative.png')
+Languages_chart = Image.open('assets/Languages.png')
+Reviews_spanish = Image.open('assets/Reviews_spanish.png')
+English_positive = Image.open('assets/English_positive.png')
+English_negative = Image.open('assets/English_negative.png')
 
 ut.add_logo()
 
