@@ -24,7 +24,7 @@ st.image(Reviews_spanish, caption='Wordcloud de las reviews en castellano')
 st.markdown("Se observa que la mayoría de reviews versan sobre la ubicación. Otras hablan sobre localizaciones específicas como Gran Vía o Plaza Mayor. Este estudio se puede afinar más haciendo estudio de sinónimos o similaridad. Pero se escapa del alcance de esta prueba.")
 
 st.header("Reviews en inglés")
-st.markdown("Vamos a estudiar también las reviews en inglés, pero por añadir algo de sustancia, vamos a tener en cuenta la positividad o negatividad del mensaje.")
+st.markdown("Vamos a estudiar también las reviews en inglés, aunque en este caso vamos a tener en cuenta la positividad o negatividad del mensaje para enriquecer el estudio.")
 
 col1, col2 = st.columns(2)
 
