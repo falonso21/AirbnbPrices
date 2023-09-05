@@ -20,7 +20,7 @@ option = st.selectbox("¿Qué tipo vivienda es?",
     )
 
 option = st.selectbox("¿En qué barrio de Madrid se encuentra?",
-    set(listings_long["neighbourhood"].tolist().pop(0))
+    set(listings_long["neighbourhood"].tolist())
     )
 
 option = st.selectbox("¿Es usted superhost en Airbnb?",
