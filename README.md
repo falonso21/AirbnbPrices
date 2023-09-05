@@ -1,9 +1,7 @@
 # Francisco Alonso Resume
 Digital app about Airbnb Data created with Python and Streamlit.
 
-###############################################################
-Despliegue de la aplicación
-###############################################################
+**Despliegue de la aplicación**
 
 La aplicación se encuentra actualmente ya desplegada en los servidores de Streamlit. Es posible acceder a ella mediante el enlace https://airbnbprices.streamlit.app/ 
 
