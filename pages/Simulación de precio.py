@@ -12,9 +12,10 @@ st.write("Si usted quiere calcular el precio diario óptimo de su vivienda antes
 
 
 listings_long = pd.read_csv("assets/Listings/listings_detail.csv")
-
+properties = listings_long["property_type"].tolist().remove("Casa particular (Cuba)")
+properties.remove("Pension (South Korea)")
 option = st.selectbox("¿Qué tipo vivienda es?",
-    set(listings_long["property_type"].tolist().remove("Casa particular (Cuba)").remove("Pension (South Korea)"))
+    set(properties)
     )
 
 option = st.selectbox("¿En qué barrio de Madrid se encuentra?",
