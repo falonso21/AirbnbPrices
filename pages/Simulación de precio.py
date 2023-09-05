@@ -19,6 +19,8 @@ option = st.selectbox("¿Qué tipo vivienda es?",
     set(properties)
     )
 
+neigh = listings_long["neighbourhood"].tolist()
+neigh = [x for x in neigh if str(x) != 'nan']
 option = st.selectbox("¿En qué barrio de Madrid se encuentra?",
     set(listings_long["neighbourhood"].tolist())
     )
