@@ -1,6 +1,7 @@
 import streamlit as st
 import utils as ut
 import pandas as pd
+import numpy as np
 import random
 
 ut.add_logo()
@@ -33,8 +34,8 @@ option = st.selectbox("¿Cómo son las habitaciones?",
     set(listings_long["room_type"].tolist())
     )
 
-option = st.selectbox("¿De cuántos baños dispone?",
-    set(listings_long["bathrooms"].tolist())
+option = st.selectbox("¿De cuántos baños dispone? Se cuenta un aseo como 0.5",
+    set(np.arange(1,10.5,0.5))
     )
 
 option = st.selectbox("¿De cuántos dormitorios dispone?",
