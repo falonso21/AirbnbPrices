@@ -24,7 +24,7 @@ with open("assets/Geo/neighbourhoods.geojson") as f:
 
 
 st.title("Estudio de la distribución geográfica de los Airbnb en la ciudad de Madrid")
-st.write("En esta sección haremos un estidio sobre cómo se reparten geográficamente los Airbnb's en la ciudad de Madrid. Adquiriremos una visión global de cuales son los barrios más demandados, para depués estudiar características en cada uno de ellos.")
+st.write("En esta sección haremos un estudio sobre cómo se reparten geográficamente los Airbnb's en la ciudad de Madrid. Adquiriremos una visión global de cuales son los barrios más demandados, para después estudiar características en cada uno de ellos.")
 
 st.header("Distribución")
 st.write("En primer lugar vamos a hacer una representación de las localizaciones de los Airbnb en el mapa mediante clústers. A medida que vayamos haciendo zoom podremos ir agregando disgregando clústers al nivel de granularidad que queramos.")
