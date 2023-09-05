@@ -39,7 +39,7 @@ option = st.selectbox("¿De cuántos baños dispone? Se cuenta un aseo como 0.5"
     )
 
 option = st.selectbox("¿De cuántos dormitorios dispone?",
-    set(listings_long["bedrooms"].tolist())
+    set(np.arange(1,10.5,1))
     )
 
 option = st.selectbox("¿Cuántos servicios ofrece la casa?",
