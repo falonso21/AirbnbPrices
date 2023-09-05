@@ -57,7 +57,7 @@ for index, row in listings_long.iterrows():
     ).add_to(madrid)
 folium_static(madrid)
 
-st.write("Podemos observar en el mapa anterior como se distribuyen los precios, siendo los tonos blancos precios más bajos y rojos los precios más altos. En el mapa se representa la localización de todos los Airbnb disponibles (quitando outliers). Por ello, la densisdad de puntos es muy alta. Podemos observar como el centro y la zona noreste de Madrid es la zona con, a priori, más puntos rojos. Esto nos indica que en la ciudad de Madrid los barrios más ricos se distribuyen por dicha zona, siendo el sur una zona menos exclusiva.")
+st.write("Podemos observar en el mapa anterior como se distribuyen los precios, siendo los tonos blancos precios más bajos y rojos los precios más altos. En el mapa se representa la localización de todos los Airbnb disponibles (quitando outliers). Por ello, la densisdad de puntos es muy alta. Podemos observar como el centro y la zona noreste de Madrid es la zona con, a priori, más puntos rojos. Esto nos indica que en la ciudad de Madrid los barrios más ricos se distribuyen por dicha zona, siendo el sur una zona menos exclusiva. No obstante, este no será el único factor de cara a Aibnb. También influirán factores como cercanía a monumentos o nudos de comunicaciones.")
 st.write("Agregaremos a continuación las viviendas por barrios y mostraremos el precio medio de cada barrio, para tener una visión más concreta.")
 percentiles = np.percentile(listings_long['price'], [20, 40, 60, 80])  # Puedes ajustar los percentiles
 
